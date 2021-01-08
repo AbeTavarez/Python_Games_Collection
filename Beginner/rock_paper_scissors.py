@@ -12,8 +12,8 @@ player = False
 
 while player == False:
   # * While the player is equals to False  loop will run
-    # Assigns player's move from input
-    player = input('||=== Ready? Choose: rock, paper or scissors ? ===|| ')
+    # Assigns player's move from input [lower() makes the input all lower case]
+    player = (input('||=== Ready? Choose: rock, paper or scissors ? ===|| ')).lower()
 
     # *** If Player and Computer choose the same move *************
     if player == computer:
@@ -51,6 +51,12 @@ while player == False:
             # If the computer didnt pick 'scissors' then player wins
             print('+++Nice move. You win!+++ -->',
                   player, 'slices', computer)
+
+    # *** If Player enters 'q' it stops the program (quit) ***********
+    elif player == 'q':
+        print('-----------GAMEOVER----------')
+        break
+
     else:
         # If the player didnt pick [rock, paper nor scissors]
         # then this message is printed
