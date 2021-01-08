@@ -15,10 +15,11 @@ while player == False:
     # Assigns player's move from input
     player = input('=== Ready? Choose: rock, paper or scissor ? ===')
 
-    # Checks if player and Computer choose the same move
+    # *** If Player and Computer choose the same move *************
     if player == computer:
         print('=== Is a Tie. Go again! ===')
-    # Player chooses 'rock'
+
+    # *** If Player chooses 'rock' ********************************
     elif player == 'rock':
         # Checks if computer move is 'paper'
         if computer == 'paper':
@@ -28,6 +29,28 @@ while player == False:
             # If the computer didnt pick 'paper' then player wins
             print('+++Nice move. You win!+++',
                   player, 'smashes', computer)
+
+    # *** If Player chooses 'paper' ********************************
+    elif player == 'paper':
+        # Checks if computer move is 'scissor'
+        if computer == 'scissor':
+            print('x:::(Oh noo You got beat by a bot!):::x',
+                  computer, 'slices', player)
+        else:
+            # If the computer didnt pick 'scissor' then player wins
+            print('+++Nice move. You win!+++',
+                  player, 'covers', computer)
+
+    # *** If Player chooses 'scissor' ******************************
+    elif player == 'scissor':
+        # Checks if computer move is 'rock'
+        if computer == 'rock':
+            print('x:::(Oh noo You got beat by a bot!):::x',
+                  computer, 'smashes', player)
+        else:
+            # If the computer didnt pick 'scissor' then player wins
+            print('+++Nice move. You win!+++',
+                  player, 'slices', computer)
     else:
         # If the player didnt pick [rock, paper nor scissor]
         # then this message is printed
