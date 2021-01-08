@@ -23,33 +23,33 @@ while player == False:
     elif player == 'rock':
         # Checks if computer move is 'paper'
         if computer == 'paper':
-            print('x:::(Oh noo You got beat by a bot!):::x',
+            print('x:::(Oh noo You got beat by a bot!):::x --> ',
                   computer, 'covers', player)
         else:
             # If the computer didnt pick 'paper' then player wins
-            print('+++Nice move. You win!+++',
+            print('+++Nice move. You win!+++ --> ',
                   player, 'smashes', computer)
 
     # *** If Player chooses 'paper' ********************************
     elif player == 'paper':
         # Checks if computer move is 'scissors'
         if computer == 'scissors':
-            print('x:::(Oh noo You got beat by a bot!):::x',
+            print('x:::(Oh noo You got beat by a bot!):::x --> ',
                   computer, 'slices', player)
         else:
             # If the computer didnt pick 'scissor' then player wins
-            print('+++Nice move. You win!+++',
+            print('+++Nice move. You win!+++ --> ',
                   player, 'covers', computer)
 
     # *** If Player chooses 'scissors' ******************************
     elif player == 'scissors':
         # Checks if computer move is 'rock'
         if computer == 'rock':
-            print('x:::(Oh noo You got beat by a bot!):::x',
+            print('x:::(Oh noo You got beat by a bot!):::x --> ',
                   computer, 'smashes', player)
         else:
             # If the computer didnt pick 'scissors' then player wins
-            print('+++Nice move. You win!+++',
+            print('+++Nice move. You win!+++ -->',
                   player, 'slices', computer)
     else:
         # If the player didnt pick [rock, paper nor scissors]
