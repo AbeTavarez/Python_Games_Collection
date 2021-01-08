@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 from random import randint
 
-play_options = ['rock', 'paper', 'scissors']
+game_moves = ['rock', 'paper', 'scissors']
 
-computer = play_options[randint(0, 2)]
+computer = game_moves[randint(0, 2)]
 
 player = False
 
@@ -20,4 +20,4 @@ while player == False:
         print('not a valid entry')
 
     player = False
-    computer = play_options[randint(0, 2)]
+    computer = game_moves[randint(0, 2)]
